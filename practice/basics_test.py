@@ -79,5 +79,3 @@ print(spam.strip('Spam'))
 
 pyperclip.paste()
 pyperclip.copy('This will copied to the system clipboard')
-
-
