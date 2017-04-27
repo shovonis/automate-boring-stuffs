@@ -15,5 +15,20 @@ def insertion_sort(items):
 
 
 number_list = [5, 4, 2, 1, 5, 6]
-insertion_sort(number_list)
-print(number_list)
+# insertion_sort(number_list)
+# print(number_list)
+
+
+"""Bubble sort algorithm"""
+
+
+def bubble_sort(items):
+    length = len(items)
+    for i in range(length - 1):
+        for j in range(length - 1):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+    return items
+
+
+print(bubble_sort(number_list))
