@@ -13,9 +13,13 @@ def get_file_types(directory):
     """Listing all the file types in current directory"""
     file_types = []
     for file in directory:
-        file_ext = file.split(".")[1]
-        if file_ext not in ignore_files + file_types:
-            file_types.append(file_ext)
+        split_text = file.split(".")
+        if len(split_text) == 2:
+            file_ext = split_text[1]
+            if file_ext not in ignore_files + file_types:
+                file_types.append(file_ext)
+        else:
+            continue
 
     return file_types
 
