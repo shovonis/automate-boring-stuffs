@@ -56,27 +56,8 @@ def add_to_inventory(inventory, list_of_items):
     print("With blessings from Dragon Total: ", sum(inventory.values()))
 
 
-add_to_inventory(stuff, dragonLoot)
-
-# String operation
-comma_separated = ', '.join(['cats', 'rats', 'bats'])
-print(comma_separated)
-
-splited_string = 'My name is Simon'.split()
-print(splited_string)
-
-char_wise_spl_string = 'My name is Simon'.split('m')  # This will split the string whenever a 'm' is encountered
-print(char_wise_spl_string)
-'Hello'.ljust(20, '-')  # Justified String with -
-
-spam = '    Hello World     '
-print(spam.strip())
-print(spam.rstrip())
-print(spam.lstrip())
-
-spam = 'SpamSpamBaconSpamEggsSpamSpam'
-print(spam.strip('Spam'))
-
-pyperclip.paste()
-pyperclip.copy('This will copied to the system clipboard')
-
+x = ('Christopher', 'Brooks', 'brooksch@umich.edu')
+fname, lname, email = x
+print(fname)
+print(lname)
+print(email)
